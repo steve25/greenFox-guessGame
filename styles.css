@@ -1,0 +1,73 @@
+body {
+  background-color: tomato;
+  color: bisque;
+  margin: 0 auto;
+}
+
+main {
+  width: 400px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 48px;
+  text-align: center;
+}
+
+section {
+  padding: 40px;
+  border-radius: 20px;
+  border: 3px solid rgb(255, 247, 22);
+  font-size: x-large;
+  background-color: cadetblue;
+}
+
+.inputs {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputs label {
+  text-align: center;
+}
+
+.inputs input {
+  height: 30px;
+  width: 50px;
+  font-size: x-large;
+  font-weight: bold;
+  text-align: center;
+}
+
+.inputs button {
+    background-image: linear-gradient(-180deg, #FF7E31, #E62C03);
+    display: inline-block;
+    outline: none;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 12px 18px;
+    border: none;
+    color: #fff;
+  }
+  
+  .reports {
+    margin-top: 30px;
+    border: 2px solid black;
+    border-radius: 15px;
+    height: 75px;
+    color: black;
+    background-color: bisque;
+    font-size: x-large;
+  }
+
+  .reports p {
+    text-align: center;
+  }
+  
+  .green-bg {
+    background-color: yellowgreen;
+  }
