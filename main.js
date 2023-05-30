@@ -3,14 +3,14 @@ window.onload = () => {
 };
 
 const lowNumber = 1;
-const highNumber = 10;
+const highNumber = 100;
 
 document.getElementById("lowNumber").innerHTML = lowNumber;
 document.getElementById("highNumber").innerHTML = highNumber;
 
-let guessNumber = document.getElementById("guessedNumber");
+let guessNumberEnter = document.getElementById("guessedNumber");
 
-guessNumber.addEventListener("keyup", (e) => {
+guessNumberEnter.addEventListener("keyup", (e) => {
   if (e.key === "Enter") {
     guess();
   }
