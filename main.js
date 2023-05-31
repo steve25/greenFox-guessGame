@@ -31,9 +31,23 @@ const guess = () => {
 
   if (!guessNumber || isNaN(guessNumber)) {
     const content =
-      "Zadajte prosím číslo od " + lowNumber + " po " + highNumber;
+      "Zadajte prosím číslo od<br /><strong>" +
+      lowNumber +
+      " po " +
+      highNumber +
+      "</strong>";
     attemp(null, content);
     return;
+  }
+
+  if (guessNumber > highNumber) {
+    const content = "Maximálne číslo je<br />" + highNumber;
+    return attemp(null, content);
+  }
+
+  if (guessNumber < highNumber) {
+    const content = "Minimálne číslo je<br />" + lowNumber;
+    return attemp(null, content);
   }
 
   while (guessNumber !== findedNumber) {
