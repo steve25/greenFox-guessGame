@@ -41,12 +41,12 @@ const guess = () => {
   }
 
   if (guessNumber > highNumber) {
-    const content = "Maximálne číslo je<br />" + highNumber;
+    const content = "Maximálne číslo je<br /><strong>" + highNumber+'</strong>';
     return attemp(null, content);
   }
 
-  if (guessNumber < highNumber) {
-    const content = "Minimálne číslo je<br />" + lowNumber;
+  if (guessNumber < lowNumber) {
+    const content = "Minimálne číslo je<br /><strong>" + lowNumber +'</strong>';
     return attemp(null, content);
   }
 
