@@ -1,6 +1,6 @@
 body {
   background-color: tomato;
-  color: bisque;
+  color: rgb(255, 242, 255);
   margin: 0 auto;
 }
 
@@ -12,6 +12,7 @@ main {
 h1 {
   font-size: 48px;
   text-align: center;
+  text-shadow: 3px 2px black;
 }
 
 section {
@@ -31,6 +32,8 @@ section {
 
 .inputs label {
   text-align: center;
+  font-size: 28px;
+  text-shadow: 1px 0 black, -1px 0 black, 0 1px black, 0 -1px black;
 }
 
 .inputs input {
@@ -70,9 +73,12 @@ section {
     color: black;
     background-color: bisque;
     font-size: x-large;
+    display: flex;
+    align-items:center;
   }
 
   .reports p {
+    margin: auto;
     text-align: center;
   }
   
